@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <title>formulaire</title>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="s.css">
+    </head>
+    <body>
+        
+        <div class="form-contaimer" style="margin-left: 30%;">
+            <h2>Formulaire de commande</h2>
+            <form action="#">
+               <label for="nom">Noms : </label>
+                <input type="text" id="nom" name="nom" required><br><br>
+                
+                <label for="tel">Numéro de Téléphone: </label>
+                <input type="text" id="tel" name="telephone" required><br><br>
+                
+                <label for="adresse">Adresse de livraison : </label>
+                <input type="text" id="adresse" name="adresse" required><br><br>
+
+                <label for="nom">Adresse e-mail(optionnel) : </label>
+                <input type="text" id="adresse" name="e-mail" required><br><br>
+
+                <label for="plats">Sélection raffinée de mets : </label>
+                <input type="text" id="plat" name="plat" required><br><br>
+                <select value="">
+                <option value="">-Veuillez choissir un plat dans le menu--</option>
+                <option value="">Ndolè Royal </option>
+                <option value="">ERU Impérial</option>
+                <option value="">Kondrè </option>
+                <option value="">Poisson Braisé</option>
+                <option value="">gambas</option>
+                <option value="">Grillade de porc</option>
+                <option value="">Viande Barbecue</option>
+                <option value="">Bouillon de Poulet</option>
+                <option value="">OKOK</option>
+                <option value="">VIn</option>
+                <option value="">Whyski</option>
+                </select><br><br>
+
+                <label for="quantite">Quantitées : </label>
+                <input type="text" id="qte" name="qte" min="1" value="1"><br><br>
+                
+
+                <label for="nom">Accompagnements : </label>
+                <div class="checkbox-group">
+               <label for=""><input type="checkbox"  name="Accompagnement"  value="plantain">Plantain mur</label>
+               <label for=""><input type="checkbox"  name="Accompagnement"  value="manioc">Manioc Doux</label>
+               <label for=""><input type="checkbox"  name="Accompagnement"  value="plantain">Baton de manioc</label>
+               <label for=""><input type="checkbox"  name="Accompagnement"  value="plantain">Riz parfumé</label>
+               <label for=""><input type="checkbox"  name="Accompagnement"  value="plantain">FRite de plantain</label>
+               <label for=""><input type="checkbox"  name="Accompagnement"  value="plantain"> Frite de pomme</label>
+               <label for=""><input type="checkbox"  name="Accompagnement"  value="plantain">Pain libanais</label>
+               <label for=""><input type="checkbox"  name="Accompagnement"  value="plantain">Pommes</label>
+                </div><br><br>
+
+                
+
+                <label for="instruction">Instructions Spéciales : </label>
+                <textarea type="text" id="instructions" name="instructions" rows="6" placeholder="Ex: moins épicé, sans arachides, sans piment..."></textarea>
+                <br><br><label for="service">Type de services :</label> 
+                <select name="service" id="service" required>
+                    <option value="">--choisissez un service---</option>
+                    <option value="">Sur Place</option>
+                    <option value="">A emporter</option>
+                    <option value="">livraison à domicile</option>
+                </select><br><br> 
+                    <label for="paiement">Mode de paiement</label>
+                <select name="paiement" id="paiement">
+                    <option value="">--selectionner un mode de paiement--</option>
+                    <option value="">paiement avant la livraison</option>
+                    <option value=""> Mobile Money</option>
+                    <option value="">Orange Money</option>
+                    <option value="">carte Bancaire</option>
+                    <option value="">Carte de Credit</option>
+                </select>      <br><br>
+                <button type="submit" script=" ondblclick=""> Valider la commande</button>        
+            
+                
+            </form>
+        </div>
+    </body>
+</html>
+
